@@ -3,6 +3,7 @@ import express from 'express'
 import { useExpressServer } from 'routing-controllers';
 import connectDB from './utils/db';
 import UserController from './controllers/userController';
+import HealthController from './controllers/healthController';
 import env from './config/env'
 import { HttpErrorHandler } from './middleware/errorHandler'
 
@@ -14,7 +15,7 @@ useExpressServer(app, {
     middlewares: [
         HttpErrorHandler
     ],
-    controllers: [UserController],
+    controllers: [UserController, HealthController],
 });
 
 const port = env.PORT || 3000;

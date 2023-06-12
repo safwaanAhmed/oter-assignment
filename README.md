@@ -22,4 +22,4 @@
 
 ## Code Deployed on render.com
 
-* Base URL: https://oter-assignment.onrender.com 🚀
+* Base URL: https://oter-assignment.onrender.com/api/v1 🚀

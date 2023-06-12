@@ -9,6 +9,7 @@ const userMessages: UserMessages = {
 }
 
 const commonMessages: Common = {
-    somethingWrong: "Something went wrong"
+    somethingWrong: "Something went wrong",
+    success: "success"
 }
 export { userMessages, commonMessages }

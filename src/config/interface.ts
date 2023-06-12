@@ -9,7 +9,8 @@ export interface User {
     fullName?: string
 }
 export interface Common {
-    somethingWrong: string
+    somethingWrong: string,
+    success: string
 }
 export interface UserMessages {
     created: string,
