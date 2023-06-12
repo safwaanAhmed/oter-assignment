@@ -17,7 +17,7 @@
 * Clone the repository
 * Make sure Node JS is installed (v16.14.2 preferred)
 * Run "npm install"
-* Start the app using "npm start" command
+* Start the app locally using "npm run dev" command
 * Application will run on port 3000
 
 ## Code Deployed on render.com
