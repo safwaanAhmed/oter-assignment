@@ -1,17 +1,12 @@
 import { Schema, SchemaType, model } from 'mongoose';
+import { User } from './../../config/interface'
 
-interface IUser {
-    firstName: string;
-    lastName: string;
-    fullName?: string;
-}
-
-const userSchema = new Schema<IUser>({
+const userSchema = new Schema<User>({
     firstName: { type: String, required: true },
     lastName: { type: String, required: true },
     fullName: String
 });
 
-const UserModel = model<IUser>('User', userSchema);
+const UserModel = model<User>('User', userSchema);
 
 export { UserModel, userSchema };
