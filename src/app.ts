@@ -4,7 +4,7 @@ import { useExpressServer } from 'routing-controllers';
 import connectDB from './utils/db';
 import UserController from './controllers/userController';
 import env from './config/env'
-import { HttpErrorHandler } from './../src/middleware/errorHandler'
+import { HttpErrorHandler } from './middleware/errorHandler'
 
 const app: express.Application = express();
 
