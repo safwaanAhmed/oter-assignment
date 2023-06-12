@@ -4,7 +4,7 @@ import { User } from '../config/interface'
 class UserService {
     public async createUser(body: User): Promise<object> {
         try {
-            const user = await UserModel.create({
+            const user: object = await UserModel.create({
                 ...body
             });
 
@@ -20,9 +20,7 @@ class UserService {
 
     public async updateUser(id: string, body: User): Promise<object | null> {
         try {
-            const updatedUser = await UserModel.findByIdAndUpdate(id, body, { new: true, fields: { firstName: 1, lastName: 1, fullName: 1 } })
-
-            return updatedUser
+            return await UserModel.findByIdAndUpdate(id, body, { new: true, fields: { firstName: 1, lastName: 1, fullName: 1 } })
         } catch (error) {
             throw error
         }

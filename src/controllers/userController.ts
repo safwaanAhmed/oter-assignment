@@ -18,20 +18,20 @@ export default class UserController {
     @Post()
     async createUser(@Body() body: User): Promise<Return> {
         body.fullName = getFullName(body?.firstName, body?.lastName);
-        const data = await this.userService.createUser(body);
+        const data: object = await this.userService.createUser(body);
         return success(StatusCodes.OK, userMessages.created, data)
     }
     @Get('/:id')
     async getUser(@Param('id') id: string): Promise<Return> {
-        const data = await this.userService.getUser(id);
-        const message = data ? userMessages.retrieved : userMessages.notFound;
+        const data: (object | null) = await this.userService.getUser(id);
+        const message: string = data ? userMessages.retrieved : userMessages.notFound;
         return success(StatusCodes.OK, message, data)
     }
     @Put('/:id')
     async updateUser(@Param('id') id: string, @Body() body: User): Promise<Return> {
         body.fullName = getFullName(body?.firstName, body?.lastName);
-        const data = await this.userService.updateUser(id, body);
-        const message = data ? userMessages.updated : userMessages.notFound;
+        const data: (object | null) = await this.userService.updateUser(id, body);
+        const message: string = data ? userMessages.updated : userMessages.notFound;
         return success(StatusCodes.OK, message, data)
     }
     @Delete('/:id')
