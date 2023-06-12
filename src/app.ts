@@ -9,6 +9,7 @@ import { HttpErrorHandler } from './../src/middleware/errorHandler'
 const app: express.Application = express();
 
 useExpressServer(app, {
+    routePrefix: '/api/v1',
     defaultErrorHandler: false,
     middlewares: [
         HttpErrorHandler
