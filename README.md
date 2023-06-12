@@ -10,7 +10,7 @@
 * Express
 * routing-controller
 * Typescript
-* MongoDB
+* MongoDB with mongoose
 
 ## Setup/Installation Requirements
 
