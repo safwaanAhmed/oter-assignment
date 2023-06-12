@@ -1,4 +1,6 @@
-const userMessages = {
+import { UserMessages, Common } from './interface'
+
+const userMessages: UserMessages = {
     created: "User created Successfully",
     updated: "User data updated successfully",
     retrieved: "User data retrieved successfully",
@@ -6,7 +8,7 @@ const userMessages = {
     notFound: "User not found"
 }
 
-const commonMessages = {
+const commonMessages: Common = {
     somethingWrong: "Something went wrong"
 }
 export { userMessages, commonMessages }
