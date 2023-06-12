@@ -7,4 +7,12 @@ const success = (status: number, message: string, data?: (object | null)) => {
     }
 }
 
-export { success }
+const errorResponse = (status: number, message: string, error?: (object | null)) => {
+    return {
+        status,
+        message,
+        error
+    }
+}
+
+export { success, errorResponse }

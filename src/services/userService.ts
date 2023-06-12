@@ -1,5 +1,3 @@
-// src/services/userService.ts
-
 import { UserModel } from '../models/userModel';
 import { User } from './../../config/interface'
 

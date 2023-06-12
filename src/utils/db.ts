@@ -1,5 +1,3 @@
-// src/utils/db.ts
-
 import { connect } from 'mongoose';
 import env from '../../config/env'
 
