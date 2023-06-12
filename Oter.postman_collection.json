@@ -1,0 +1,482 @@
+{
+	"info": {
+		"_postman_id": "fc2f5b92-4d2d-47dc-bba0-d5de9f4fb949",
+		"name": "Oter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9666243"
+	},
+	"item": [
+		{
+			"name": "Get User By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://oter-assignment.onrender.com/api/v1/users/6486e2cd2084e73331d3fa68",
+					"protocol": "https",
+					"host": [
+						"oter-assignment",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"6486e2cd2084e73331d3fa68"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get User By Id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://oter-assignment.onrender.com/api/v1/users/6486e2cd2084e73331d3fa68",
+							"protocol": "https",
+							"host": [
+								"oter-assignment",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"6486e2cd2084e73331d3fa68"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 12 Jun 2023 09:18:16 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "7d6101638ec917b2-MAA"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"9d-To5VKUFQuuOUCTylDoVMtQAvUQA\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cf_bm=SHGIIV4HCgXQg3reyzqr42LEheJNssFEifcE_H0MnR4-1686561496-0-AV46UyROYQx2ky0H1g5BP9EdH30nF6WvEn+ml4tMamg8qLfF/fXir2e0SBCqvl/tSGFsGfAAtBs0aUKIDIPPkbI=; path=/; expires=Mon, 12-Jun-23 09:48:16 GMT; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_cfuvid=aYVB5_UYgE89AWzlz5iPHW3jAx5yr8oDASkw4rDYl1w-1686561496428-0-604800000; path=/; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"User data retrieved successfully\",\n    \"data\": {\n        \"_id\": \"6486e2cd2084e73331d3fa68\",\n        \"firstName\": \"V\",\n        \"lastName\": \"Kohli\",\n        \"fullName\": \"V Kohli\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"V\",\r\n    \"lastName\": \"Kohli\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://oter-assignment.onrender.com/api/v1/users",
+					"protocol": "https",
+					"host": [
+						"oter-assignment",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create User",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"V\",\r\n    \"lastName\": \"Kohli\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://oter-assignment.onrender.com/api/v1/users",
+							"protocol": "https",
+							"host": [
+								"oter-assignment",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 12 Jun 2023 09:18:05 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "7d61011e5a0917b2-MAA"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"9e-FC/xIG4HbgSFXpLmy42KLw35zdY\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cf_bm=X4toYtAxwTvLnxi6CO9oIe..dQcM214f_IwNKwhvy8w-1686561485-0-AQrdUvvMF0OLCpW+zXkgYneaV0SPAjVlrs6kWprbqTB2BVXeRFavSuBBeUWWmJenvfpJnKqkyxcxBH+6SFOM/XQ=; path=/; expires=Mon, 12-Jun-23 09:48:05 GMT; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_cfuvid=84CncD4wmz_BymvKcfWP2RkL5x5rH11Id0hqG4r1PNs-1686561485446-0-604800000; path=/; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"User created Successfully\",\n    \"data\": {\n        \"firstName\": \"V\",\n        \"lastName\": \"Kohli\",\n        \"fullName\": \"V Kohli\",\n        \"_id\": \"6486e2cd2084e73331d3fa68\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Mahendra S\",\r\n    \"lastName\": \"Dhoni\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://oter-assignment.onrender.com/api/v1/users/6486d1b521d8c93cc4002c24",
+					"protocol": "https",
+					"host": [
+						"oter-assignment",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"6486d1b521d8c93cc4002c24"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update user",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Mahendra S\",\r\n    \"lastName\": \"Dhoni\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://oter-assignment.onrender.com/api/v1/users/6486d1b521d8c93cc4002c24",
+							"protocol": "https",
+							"host": [
+								"oter-assignment",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"6486d1b521d8c93cc4002c24"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "173"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ad-Cp7ihI1SC05v6fjxn9vLFUC0BBs\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Jun 2023 08:10:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"User data updated successfully\",\n    \"data\": {\n        \"_id\": \"6486d1b521d8c93cc4002c24\",\n        \"firstName\": \"Mahendra S\",\n        \"lastName\": \"Dhoni\",\n        \"fullName\": \"Mahendra S Dhoni\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://oter-assignment.onrender.com/api/v1/users/6486e34d2084e73331d3fa6b",
+					"protocol": "https",
+					"host": [
+						"oter-assignment",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"6486e34d2084e73331d3fa6b"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete User",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://oter-assignment.onrender.com/api/v1/users/6486e34d2084e73331d3fa6b",
+							"protocol": "https",
+							"host": [
+								"oter-assignment",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"6486e34d2084e73331d3fa6b"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 12 Jun 2023 09:20:23 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "7d61047af92817b2-MAA"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"39-VBRclJd/ngEtFvXIZtDj4TgVhdw\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cf_bm=EiPCi2GLlGRT1pYdk6vQ1qjMvH2XBosi1O3xBPrQ4js-1686561623-0-AQIp+6JyNozHLTseZYutXoHDKOnxIGTHi6vIxeQv1yeaaXZPydM60dc9LScYGsAOx/Zy254Dz/oYnU4lpg5IEN0=; path=/; expires=Mon, 12-Jun-23 09:50:23 GMT; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_cfuvid=eSvcYcokKapgCdXfT8VwcydOZuwuTJty2vSVcC6ibPs-1686561623004-0-604800000; path=/; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"User data deleted successfully\"\n}"
+				}
+			]
+		}
+	]
+}

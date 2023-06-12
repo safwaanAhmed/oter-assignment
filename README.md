@@ -19,3 +19,7 @@
 * Run "npm install"
 * Start the app using "npm start" command
 * Application will run on port 3000
+
+## Code Deployed on render.com
+
+* Base URL: https://oter-assignment.onrender.com 🚀
