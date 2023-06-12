@@ -3,7 +3,7 @@ import express from 'express'
 import { useExpressServer } from 'routing-controllers';
 import connectDB from './utils/db';
 import UserController from './controllers/userController';
-import env from './../config/env'
+import env from './config/env'
 import { HttpErrorHandler } from './../src/middleware/errorHandler'
 
 const app: express.Application = express();

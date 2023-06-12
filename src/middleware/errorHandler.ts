@@ -1,6 +1,6 @@
 import { Middleware, ExpressErrorMiddlewareInterface, HttpError } from 'routing-controllers';
 import { StatusCodes } from 'http-status-codes';
-import { commonMessages } from './../../config/messages'
+import { commonMessages } from '../config/messages'
 import { errorResponse } from './../utils/response'
 
 @Middleware({ type: 'after' })

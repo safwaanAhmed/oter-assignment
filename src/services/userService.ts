@@ -1,5 +1,5 @@
 import { UserModel } from '../models/userModel';
-import { User } from './../../config/interface'
+import { User } from '../config/interface'
 
 class UserService {
     public async createUser(body: User): Promise<object> {
@@ -15,12 +15,12 @@ class UserService {
     }
 
     public async getUser(id: string): Promise<(object | null)> {
-        return await UserModel.findById(id);
+        return await UserModel.findById(id, { firstName: 1, lastName: 1, fullName: 1 });
     }
 
     public async updateUser(id: string, body: User): Promise<object | null> {
         try {
-            const updatedUser = await UserModel.findByIdAndUpdate(id, body, { new: true })
+            const updatedUser = await UserModel.findByIdAndUpdate(id, body, { new: true, fields: { firstName: 1, lastName: 1, fullName: 1 } })
 
             return updatedUser
         } catch (error) {

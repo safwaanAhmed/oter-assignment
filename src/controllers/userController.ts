@@ -1,9 +1,9 @@
 import { JsonController, Post, Body, Get, Param, Delete, Put } from 'routing-controllers';
 import UserService from '../services/userService';
-import { Return, User } from './../../config/interface'
+import { Return, User } from '../config/interface'
 import { success } from './../utils/response'
 import { StatusCodes } from 'http-status-codes';
-import { userMessages } from './../../config/messages'
+import { userMessages } from '../config/messages'
 import { getFullName } from './../utils/common'
 
 @JsonController('/users')
